@@ -1,5 +1,8 @@
 #include "StringCalculator.h"
 #include <vector>
+#include <iostream>
+#include <string>
+#include <regex>
 
 void add_if_valid(vector<int> &numbers, string number_string) {
 	int number = stoi(number_string);
