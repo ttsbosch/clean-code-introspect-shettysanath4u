@@ -54,5 +54,5 @@ int StringCalculator::add(string input){
 
 	check_for_negatives(numbers);
 
-	return 0;
+	return accumulate(numbers.begin(), numbers.end(), 0);
 }
