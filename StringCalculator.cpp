@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include <numeric>
 
 class GetNegatives {
 private:
