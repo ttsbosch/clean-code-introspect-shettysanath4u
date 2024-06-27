@@ -52,7 +52,7 @@ int StringCalculator::add(string input){
 
 	vector<int> numbers = get_numbers(input);
 
-	//check_for_negatives(numbers);
+	check_for_negatives(numbers);
 
 	return 0;
 }
