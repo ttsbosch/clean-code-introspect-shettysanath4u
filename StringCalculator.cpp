@@ -1,5 +1,11 @@
 #include "StringCalculator.h"
 
+void add_if_valid(vector<int> &numbers, string number_string) {
+	int number = stoi(number_string);
+	if (number <= 1000)
+		numbers.push_back(number);
+}
+
 vector<int> get_numbers(const string &input) {
 	regex numbers_only("(-?\\d+)+");
 
@@ -16,7 +22,7 @@ int StringCalculator::add(string input){
 
 	vector<int> numbers = get_numbers(input);
 
-	check_for_negatives(numbers);
+	//check_for_negatives(numbers);
 
 	return 0;
 }
