@@ -27,7 +27,8 @@ void check_for_negatives(const vector<int> &numbers) {
 	string negatives = for_each(numbers.begin(), numbers.end(), GetNegatives());
 
 	if (negatives.size() > 0) {
-		throw invalid_argument("Negatives not allowed: " + negatives);
+		//throw invalid_argument("Negatives not allowed: " + negatives);
+		throw runtime_error("Negatives not allowed");
 	}
 }
 
